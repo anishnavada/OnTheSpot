@@ -1,3 +1,33 @@
 body{
-    background-color: #EEEEEE;
+    background-color: #EEEEEE !important;
+}
+
+.mainInfo{
+    margin-top: 50px; 
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+
+#appPicture{
+    width: 20%;
+    margin-right: 40px;
+}
+
+.hide{
+    opacity: 0; 
+    transition: 1s opacity;
+}
+
+.arrow{
+    margin-top: 50px; 
+    width: 20%; 
+}
+
+#down-arrow-hover{
+    display: none; 
+}
+
+#down-arrow{
+    display: block;
 }
