@@ -9,23 +9,39 @@
             
             <img id="appPicture" src="images/App.png" alt="App">
             <center>
-            <div id="frontText"> 
-                <h1 id="title" class="hide">
-                    Welcome to On-The-Spot
-                </h1>
-                <p id="l1" class="hide">
-                   A way for Cornell Students to find parking quickly, on-the-spot. 
-                </p>
-                <p id="l2" class="hide">
-                    Click below to join an email list and be notified to be one of the first to use the app! 
-                </p>
-                <img class="arrow hide" id="down-arrow" src="images/Arrow.svg" alt="Arrow">
-                <img class="arrow hide" id="down-arrow-hover" src="images/Arrow_Hover.svg" alt="Arrow">
-    
-            </div>
-        </center>
-
+                <div id="frontText"> 
+                    <h1 id="title" class="hide">
+                        Welcome to On-The-Spot
+                    </h1>
+                    <p id="l1" class="hide">
+                    A way for Cornell Students to find parking quickly, on-the-spot. 
+                    </p>
+                    <p id="l2" class="hide">
+                        Click below to join an email list and be notified to be one of the first to use the app! 
+                    </p>
+                    <img class="arrow hide" id="down-arrow" src="images/Arrow.svg" alt="Arrow">
+                    <img class="arrow hide" id="down-arrow-hover" src="images/Arrow_Hover.svg" alt="Arrow">
+        
+                </div>
+            </center>
         </div>
+        <form id="form">
+            <div id="formTop"></div>
+            <center><h1 id="formTitle">Sign Up and Be The First To Find Parking!</h1></center>
+            <div class="form-group">
+                <label for="exampleName">First and Last Name</label>
+                <input type="text" class="form-control" id="exampleName" aria-describedby="nameHelp" placeholder="Enter first and last name">
+              </div>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email Address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+              </div>
+            <button type="button" onclick="showModal()" class="btn btn-secondary">Submit</button>
+            <div id="notification" class="alert alert-secondary" role="alert">
+                You have successfully submitted your email! Refresh the page to submit another email.
+            </div>
+        </form>
+      
     </body>
     <script src="script.js"></script>
 </html>

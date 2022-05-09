@@ -3,6 +3,9 @@ const line1 = document.getElementById("l1");
 const line2 = document.getElementById("l2");
 const downArrow = document.getElementById('down-arrow');
 const downArrowHover = document.getElementById('down-arrow-hover');
+const form = document.getElementById("form");
+const formTop = document.getElementById("formTop");
+const notification = document.getElementById("notification");
 
 function delay(time) {
     return new Promise(resolve => setTimeout(resolve, time));
@@ -30,3 +33,14 @@ downArrowHover.addEventListener('mouseout', function handleMouseOver() {
     downArrowHover.style.display = 'none';
     downArrow.style.display = "block"; 
 });
+
+downArrowHover.addEventListener('click', function(){
+    form.style.display = "block";
+    formTop.scrollIntoView({behavior: "smooth", 
+                                  block: "start", 
+                                  inline: "nearest"});
+})
+
+function showModal(){
+    notification.style.display = "block";
+}

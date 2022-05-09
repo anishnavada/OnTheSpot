@@ -7,10 +7,11 @@ body{
     display: flex;
     align-items: center; 
     justify-content: center;
+    margin-bottom: 500px; 
 }
 
 #appPicture{
-    width: 20%;
+    width: 18%;
     margin-right: 40px;
 }
 
@@ -30,4 +31,21 @@ body{
 
 #down-arrow{
     display: block;
+}
+
+form{
+    width: 80%;
+    margin: auto; 
+    margin-bottom: 500px; 
+    display: none; 
+}
+
+#formTitle{
+    margin-bottom: 50px; 
+    margin-top: 50px; 
+}
+
+.alert{
+    margin-top: 50px; 
+    display: none; 
 }
